@@ -1,0 +1,65 @@
+# Node.js 관련 파일들
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.pnpm-debug.log*
+
+# 빌드된 파일들
+dist/
+build/
+public/
+
+# 환경 변수 파일들
+.env
+.env.*.local
+
+# OS별 시스템 파일들
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Go 관련 파일들
+bin/
+pkg/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+
+# Go Modules
+/go.sum
+/go.mod
+/coverage.out
+
+# VSCode 설정 파일
+.vscode/
+.idea/
+
+# 기타 에디터 설정 파일
+*.sublime-project
+*.sublime-workspace
+
+# Log 파일
+*.log
+
+# Temporary files
+*.tmp
+*.swp
+*.bak
+*.ori
+*.save
+*~
+
+# 프로젝트 빌드 산출물
+*.out
+*.a
+*.o
+*.cgo
+
+# Testing artifacts
+*.coverprofile
+*.coverage

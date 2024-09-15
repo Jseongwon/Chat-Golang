@@ -19,11 +19,16 @@ func NewServer() *Network {
 	n.engin.Use(gin.Recovery())
 	n.engin.Use(cors.New(cors.Config{
 		AllowWebSockets:  true,
-		AllowOrigins:     []string("*"),
-		AllowMethods:     []string("GET", "POST", "PUT"),
-		AllowHeaders:     []string("*"),
+		AllowOrigins:     []string{"*"},
+		AllowMethods:     []string{"GET", "POST", "PUT"},
+		AllowHeaders:     []string{"*"},
 		AllowCredentials: true,
 	}))
+
+	r := NewRoom()
+	go r.RunInit()
+
+	n.engin.GET("/room", r.SocketServe)
 
 	return n
 }
