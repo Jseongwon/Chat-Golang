@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "logs\\socket-error\\.4801ed142d74fdf1df82293699922e0d01b4e7ed-audit.json",
+    "files": [
+        {
+            "date": 1726389045656,
+            "name": "logs\\socket-error\\2024-09-15.log",
+            "hash": "523115eb3998d963eaeafd1aa4ce90fdba26030b4d4a4e9550643d4992ed5ced"
+        }
+    ],
+    "hashType": "sha256"
+}
